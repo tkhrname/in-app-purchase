@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import SwiftyStoreKit
+import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +18,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
+        
+        SwiftyStoreKit.completeTransactions(atomically: true) { purchases in
+            for purchase in purchases {
+                switch purchase.transaction.transactionState {
+                case .purchasing, .restored:
+                    if purchase.needsFinishTransaction {
+                        SwiftyStoreKit.finishTransaction(purchase.transaction)
+                    }
+                    break
+                case .purchased, .failed, .deferred:
+                    break
+                }
+            }
+        }
+        
+        // StoreKit初期化
+        let skPaymentTransactionObserber = PurchaseManager()
+        skPaymentTransactionObserber.delegate = self
+        SKPaymentQueue.default().add(skPaymentTransactionObserber)
+        
         return true
     }
 
@@ -91,3 +114,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate: PurchaseManagerDelegate {
+    
+    func purchaseManager(_ purchaseManager: PurchaseManager, didFinishUntreatedTransaction transaction: SKPaymentTransaction, decisionHandler: (_ complete: Bool) -> Void) {
+        print("test")
+    }
+}

@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0313351056749860A89FA214 /* Pods_SubscriptionAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A62B85E5F2BE1D08B78C86E /* Pods_SubscriptionAppUITests.framework */; };
+		412DAF3832E53168244CE917 /* Pods_SubscriptionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C583C8FDEB6BBC2FD59046 /* Pods_SubscriptionApp.framework */; };
 		6D099EDE22B080DD00E66004 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D099EDD22B080DD00E66004 /* AppDelegate.swift */; };
-		6D099EE022B080DD00E66004 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D099EDF22B080DD00E66004 /* ViewController.swift */; };
+		6D099EE022B080DD00E66004 /* SwiftyStoreKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D099EDF22B080DD00E66004 /* SwiftyStoreKitViewController.swift */; };
 		6D099EE322B080DD00E66004 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D099EE122B080DD00E66004 /* Main.storyboard */; };
 		6D099EE622B080DD00E66004 /* SubscriptionApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D099EE422B080DD00E66004 /* SubscriptionApp.xcdatamodeld */; };
 		6D099EE822B080DF00E66004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D099EE722B080DF00E66004 /* Assets.xcassets */; };
 		6D099EEB22B080DF00E66004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D099EE922B080DF00E66004 /* LaunchScreen.storyboard */; };
 		6D099EF622B080DF00E66004 /* SubscriptionAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D099EF522B080DF00E66004 /* SubscriptionAppTests.swift */; };
 		6D099F0122B080DF00E66004 /* SubscriptionAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D099F0022B080DF00E66004 /* SubscriptionAppUITests.swift */; };
+		6D099F0F22B0E0F500E66004 /* VipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D099F0E22B0E0F500E66004 /* VipViewController.swift */; };
+		6D099F1122B0E19A00E66004 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D099F1022B0E19A00E66004 /* ProfileViewController.swift */; };
+		6D099F1322B0E1D100E66004 /* InterAdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D099F1222B0E1D100E66004 /* InterAdsViewController.swift */; };
+		6D406AA022B9CCE40061A8DC /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D406A9F22B9CCE40061A8DC /* ProductManager.swift */; };
+		6D406AA322B9CCF60061A8DC /* PurchaseManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D406AA122B9CCF60061A8DC /* PurchaseManagerDelegate.swift */; };
+		6D406AA422B9CCF60061A8DC /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D406AA222B9CCF60061A8DC /* PurchaseManager.swift */; };
+		6D406AA622B9CD690061A8DC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D406AA522B9CD690061A8DC /* StoreKit.framework */; };
+		6D738DA322B9D9E700BFF101 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D738DA222B9D9E700BFF101 /* ViewController.swift */; };
+		ABA4EF570AADA3A41D2DFF9C /* Pods_SubscriptionAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 986B361D18BC96D5A0073DA2 /* Pods_SubscriptionAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		104E200C8A9B54AAB623B541 /* Pods-SubscriptionApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubscriptionApp.debug.xcconfig"; path = "Target Support Files/Pods-SubscriptionApp/Pods-SubscriptionApp.debug.xcconfig"; sourceTree = "<group>"; };
+		13C583C8FDEB6BBC2FD59046 /* Pods_SubscriptionApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SubscriptionApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A62B85E5F2BE1D08B78C86E /* Pods_SubscriptionAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SubscriptionAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D099EDA22B080DD00E66004 /* SubscriptionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubscriptionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D099EDD22B080DD00E66004 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6D099EDF22B080DD00E66004 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6D099EDF22B080DD00E66004 /* SwiftyStoreKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStoreKitViewController.swift; sourceTree = "<group>"; };
 		6D099EE222B080DD00E66004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D099EE522B080DD00E66004 /* SubscriptionApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SubscriptionApp.xcdatamodel; sourceTree = "<group>"; };
 		6D099EE722B080DF00E66004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +63,20 @@
 		6D099EFC22B080DF00E66004 /* SubscriptionAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubscriptionAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D099F0022B080DF00E66004 /* SubscriptionAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionAppUITests.swift; sourceTree = "<group>"; };
 		6D099F0222B080DF00E66004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D099F0E22B0E0F500E66004 /* VipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VipViewController.swift; sourceTree = "<group>"; };
+		6D099F1022B0E19A00E66004 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		6D099F1222B0E1D100E66004 /* InterAdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterAdsViewController.swift; sourceTree = "<group>"; };
+		6D406A9F22B9CCE40061A8DC /* ProductManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
+		6D406AA122B9CCF60061A8DC /* PurchaseManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseManagerDelegate.swift; sourceTree = "<group>"; };
+		6D406AA222B9CCF60061A8DC /* PurchaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
+		6D406AA522B9CD690061A8DC /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		6D738DA222B9D9E700BFF101 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71887FDA8B65BF35690E0A70 /* Pods-SubscriptionAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubscriptionAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SubscriptionAppTests/Pods-SubscriptionAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		986B361D18BC96D5A0073DA2 /* Pods_SubscriptionAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SubscriptionAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B43A379AA67EE4976DD6AAF /* Pods-SubscriptionAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubscriptionAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SubscriptionAppUITests/Pods-SubscriptionAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CE58453037B3009D3187E897 /* Pods-SubscriptionAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubscriptionAppTests.release.xcconfig"; path = "Target Support Files/Pods-SubscriptionAppTests/Pods-SubscriptionAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		D44E4C4FE847791776EF18BD /* Pods-SubscriptionApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubscriptionApp.release.xcconfig"; path = "Target Support Files/Pods-SubscriptionApp/Pods-SubscriptionApp.release.xcconfig"; sourceTree = "<group>"; };
+		FF158C13339A0EADB11BEA39 /* Pods-SubscriptionAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubscriptionAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-SubscriptionAppUITests/Pods-SubscriptionAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				412DAF3832E53168244CE917 /* Pods_SubscriptionApp.framework in Frameworks */,
+				6D406AA622B9CD690061A8DC /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABA4EF570AADA3A41D2DFF9C /* Pods_SubscriptionAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0313351056749860A89FA214 /* Pods_SubscriptionAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +115,8 @@
 				6D099EF422B080DF00E66004 /* SubscriptionAppTests */,
 				6D099EFF22B080DF00E66004 /* SubscriptionAppUITests */,
 				6D099EDB22B080DD00E66004 /* Products */,
+				95E7BFED981B1BC5A828B928 /* Pods */,
+				8A229ED9CA64287391B48375 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,8 +133,9 @@
 		6D099EDC22B080DD00E66004 /* SubscriptionApp */ = {
 			isa = PBXGroup;
 			children = (
+				6DA6A15122BB0DE3002315F1 /* SwiftyStoreKit */,
+				6D406A9822B9CC720061A8DC /* no-library */,
 				6D099EDD22B080DD00E66004 /* AppDelegate.swift */,
-				6D099EDF22B080DD00E66004 /* ViewController.swift */,
 				6D099EE122B080DD00E66004 /* Main.storyboard */,
 				6D099EE722B080DF00E66004 /* Assets.xcassets */,
 				6D099EE922B080DF00E66004 /* LaunchScreen.storyboard */,
@@ -128,6 +163,52 @@
 			path = SubscriptionAppUITests;
 			sourceTree = "<group>";
 		};
+		6D406A9822B9CC720061A8DC /* no-library */ = {
+			isa = PBXGroup;
+			children = (
+				6D406AA222B9CCF60061A8DC /* PurchaseManager.swift */,
+				6D406AA122B9CCF60061A8DC /* PurchaseManagerDelegate.swift */,
+				6D406A9F22B9CCE40061A8DC /* ProductManager.swift */,
+				6D738DA222B9D9E700BFF101 /* ViewController.swift */,
+			);
+			path = "no-library";
+			sourceTree = "<group>";
+		};
+		6DA6A15122BB0DE3002315F1 /* SwiftyStoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				6D099EDF22B080DD00E66004 /* SwiftyStoreKitViewController.swift */,
+				6D099F0E22B0E0F500E66004 /* VipViewController.swift */,
+				6D099F1222B0E1D100E66004 /* InterAdsViewController.swift */,
+				6D099F1022B0E19A00E66004 /* ProfileViewController.swift */,
+			);
+			path = SwiftyStoreKit;
+			sourceTree = "<group>";
+		};
+		8A229ED9CA64287391B48375 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D406AA522B9CD690061A8DC /* StoreKit.framework */,
+				13C583C8FDEB6BBC2FD59046 /* Pods_SubscriptionApp.framework */,
+				986B361D18BC96D5A0073DA2 /* Pods_SubscriptionAppTests.framework */,
+				1A62B85E5F2BE1D08B78C86E /* Pods_SubscriptionAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95E7BFED981B1BC5A828B928 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				104E200C8A9B54AAB623B541 /* Pods-SubscriptionApp.debug.xcconfig */,
+				D44E4C4FE847791776EF18BD /* Pods-SubscriptionApp.release.xcconfig */,
+				71887FDA8B65BF35690E0A70 /* Pods-SubscriptionAppTests.debug.xcconfig */,
+				CE58453037B3009D3187E897 /* Pods-SubscriptionAppTests.release.xcconfig */,
+				FF158C13339A0EADB11BEA39 /* Pods-SubscriptionAppUITests.debug.xcconfig */,
+				9B43A379AA67EE4976DD6AAF /* Pods-SubscriptionAppUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D099F0522B080DF00E66004 /* Build configuration list for PBXNativeTarget "SubscriptionApp" */;
 			buildPhases = (
+				2CD92FECC28FEB9C9FA4A20B /* [CP] Check Pods Manifest.lock */,
 				6D099ED622B080DD00E66004 /* Sources */,
 				6D099ED722B080DD00E66004 /* Frameworks */,
 				6D099ED822B080DD00E66004 /* Resources */,
+				23170CAF5E70D9AFB30FBED1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +235,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D099F0822B080DF00E66004 /* Build configuration list for PBXNativeTarget "SubscriptionAppTests" */;
 			buildPhases = (
+				8552D1956A8A9403ECFEF86F /* [CP] Check Pods Manifest.lock */,
 				6D099EED22B080DF00E66004 /* Sources */,
 				6D099EEE22B080DF00E66004 /* Frameworks */,
 				6D099EEF22B080DF00E66004 /* Resources */,
@@ -170,6 +254,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D099F0B22B080DF00E66004 /* Build configuration list for PBXNativeTarget "SubscriptionAppUITests" */;
 			buildPhases = (
+				459D94EF31E899181FE21AC4 /* [CP] Check Pods Manifest.lock */,
 				6D099EF822B080DF00E66004 /* Sources */,
 				6D099EF922B080DF00E66004 /* Frameworks */,
 				6D099EFA22B080DF00E66004 /* Resources */,
@@ -196,6 +281,11 @@
 				TargetAttributes = {
 					6D099ED922B080DD00E66004 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					6D099EF022B080DF00E66004 = {
 						CreatedOnToolsVersion = 10.1;
@@ -254,12 +344,114 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23170CAF5E70D9AFB30FBED1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SubscriptionApp/Pods-SubscriptionApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyStoreKit/SwiftyStoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyStoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SubscriptionApp/Pods-SubscriptionApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CD92FECC28FEB9C9FA4A20B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SubscriptionApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		459D94EF31E899181FE21AC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SubscriptionAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8552D1956A8A9403ECFEF86F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SubscriptionAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6D099ED622B080DD00E66004 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D099EE022B080DD00E66004 /* ViewController.swift in Sources */,
+				6D738DA322B9D9E700BFF101 /* ViewController.swift in Sources */,
+				6D099F0F22B0E0F500E66004 /* VipViewController.swift in Sources */,
+				6D406AA422B9CCF60061A8DC /* PurchaseManager.swift in Sources */,
+				6D406AA322B9CCF60061A8DC /* PurchaseManagerDelegate.swift in Sources */,
+				6D406AA022B9CCE40061A8DC /* ProductManager.swift in Sources */,
+				6D099EE022B080DD00E66004 /* SwiftyStoreKitViewController.swift in Sources */,
+				6D099F1322B0E1D100E66004 /* InterAdsViewController.swift in Sources */,
+				6D099F1122B0E19A00E66004 /* ProfileViewController.swift in Sources */,
 				6D099EE622B080DD00E66004 /* SubscriptionApp.xcdatamodeld in Sources */,
 				6D099EDE22B080DD00E66004 /* AppDelegate.swift in Sources */,
 			);
@@ -367,7 +559,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +614,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -434,17 +626,20 @@
 		};
 		6D099F0622B080DF00E66004 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 104E200C8A9B54AAB623B541 /* Pods-SubscriptionApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Distribution: takehiro watanabe (WE75VTX439)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WE75VTX439;
 				INFOPLIST_FILE = SubscriptionApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tkhr.SubscriptionApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tkhr.in-app-purchase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "in-app-purchase-test";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,17 +647,20 @@
 		};
 		6D099F0722B080DF00E66004 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D44E4C4FE847791776EF18BD /* Pods-SubscriptionApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Distribution: takehiro watanabe (WE75VTX439)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WE75VTX439;
 				INFOPLIST_FILE = SubscriptionApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tkhr.SubscriptionApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tkhr.in-app-purchase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "in-app-purchase-test";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -470,6 +668,7 @@
 		};
 		6D099F0922B080DF00E66004 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71887FDA8B65BF35690E0A70 /* Pods-SubscriptionAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +690,7 @@
 		};
 		6D099F0A22B080DF00E66004 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE58453037B3009D3187E897 /* Pods-SubscriptionAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +712,7 @@
 		};
 		6D099F0C22B080DF00E66004 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF158C13339A0EADB11BEA39 /* Pods-SubscriptionAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +733,7 @@
 		};
 		6D099F0D22B080DF00E66004 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B43A379AA67EE4976DD6AAF /* Pods-SubscriptionAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
