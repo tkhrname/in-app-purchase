@@ -18,23 +18,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //プロダクト情報取得
-        ProductManager.request(productIdentifiers: productIdentifiers, completion: {[weak self] (products: [SKProduct], error: Error?) -> Void in
-                                guard error == nil else {
-                                    let text = (error as? ProductManagerError)?.localizedDescription ?? "error"
-                                    self?.label?.text = text
-                                    print(text)
-                                    return
-                                }
-                                
-                                for product in products {
-                                    //価格を抽出
-                                    let priceString = product.localizedPrice ?? "--"
-                                    /* TODO: UI更新 */
-                                    let text = product.localizedTitle + " : \(priceString)"
-                                    self?.label?.text = text
-                                    print(text)
-                                }
-        })
+        ProductManager.request(productIdentifiers: productIdentifiers) { [weak self] (products: [SKProduct], error: Error?) -> Void in
+            guard error == nil else {
+                let text = (error as? ProductManagerError)?.localizedDescription ?? "error"
+                self?.label?.text = text
+                print(text)
+                return
+            }
+            
+            for product in products {
+                //価格を抽出
+                let priceString = product.localizedPrice ?? "--"
+                /* TODO: UI更新 */
+                let text = product.localizedTitle + " : \(priceString)"
+                self?.label?.text = text
+                print(text)
+            }
+        }
     }
     
     ///課金開始アクション
@@ -47,15 +47,14 @@ class ViewController: UIViewController {
     ///課金開始
     private func purchase(productIdentifier: String) {
         // プロダクト情報取得
-        ProductManager.request(productIdentifier: productIdentifier,
-                               completion: {[weak self]  (product: SKProduct?, error: Error?) -> Void in
-                                guard error == nil, let product = product else {
-                                    self?.purchaseManager(PurchaseManager.shared, didFailTransactionWithError: error)
-                                    return
-                                }
-                                //課金処理開始
-                                PurchaseManager.shared.purchase(product: product)
-        })
+        ProductManager.request(productIdentifier: productIdentifier) { [weak self]  (product: SKProduct?, error: Error?) -> Void in
+            guard error == nil, let product = product else {
+                self?.purchaseManager(PurchaseManager.shared, didFailTransactionWithError: error)
+                return
+            }
+            //課金処理開始
+            PurchaseManager.shared.purchase(product: product)
+        }
     }
     
     /// リストア開始

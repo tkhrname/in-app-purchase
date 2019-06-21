@@ -13,6 +13,7 @@ enum PurchaseManagerError: Error, CustomStringConvertible {
     case cannotMakePayments
     case purchasing
     case restoreing
+    case cannotConnectToItunesStore
     
     var description: String {
         switch self {
@@ -22,6 +23,8 @@ enum PurchaseManagerError: Error, CustomStringConvertible {
             return "課金処理中です。"
         case .restoreing:
             return "リストア中です。"
+        case .cannotConnectToItunesStore:
+            return "Cannot connect to iTunes Store"
         }
     }
 }
@@ -37,6 +40,9 @@ class PurchaseManager: NSObject {
     private var isRestore: Bool = false
     
     /// 課金開始
+    ///
+    /// - Parameters:
+    ///   - product: プロダクト情報
     public func purchase(product: SKProduct){
         
         var error: PurchaseManagerError?
@@ -59,7 +65,7 @@ class PurchaseManager: NSObject {
             return
         }
         
-        //未処理のトランザクションがあればそれを利用
+        // 未処理のトランザクションがあればそれを利用
         // [SKPaymentTransaction] 支払い取引
         let transactions: [SKPaymentTransaction] = SKPaymentQueue.default().transactions
         for transaction in transactions {
@@ -89,6 +95,8 @@ class PurchaseManager: NSObject {
     }
     
     /// リストア開始
+    ///
+    /// - Parameters:
     public func restore() {
         if isRestore == false {
             isRestore = true
@@ -100,6 +108,10 @@ class PurchaseManager: NSObject {
     }
     
     // MARK: - SKPaymentTransaction process
+    /// トランザクション処理完了
+    ///
+    /// - Parameters:
+    ///   - transaction: トランザクション情報
     private func completeTransaction(_ transaction : SKPaymentTransaction) {
         if transaction.payment.productIdentifier == self.productIdentifier {
             //課金終了
@@ -121,6 +133,10 @@ class PurchaseManager: NSObject {
         }
     }
     
+    /// トランザクション処理完了
+    ///
+    /// - Parameters:
+    ///   - transaction: トランザクション情報
     private func failedTransaction(_ transaction : SKPaymentTransaction) {
         //課金失敗
         delegate?.purchaseManager(self, didFailTransactionWithError: transaction.error)
@@ -153,32 +169,52 @@ extension PurchaseManager : SKPaymentTransactionObserver {
         for transaction in transactions {
             switch transaction.transactionState {
             case .purchasing: // トランザクション処理中
-                break
+                print("purchasing")
             case .purchased: // 購入完了
-                break
+                print("purchased")
             case .failed: // 購入処理失敗
-                break
+                let error = transaction.error
+                print(error.debugDescription)
+                print(error?.localizedDescription)
+                let nserror = error as! NSError
+                print(nserror.code)
+                print(nserror.domain)
+                print(nserror.localizedDescription)
+                print(nserror.localizedFailureReason)
+                print(nserror.userInfo)
             case .restored: // 以前にユーザーが購入したコンテンツを復元
-                break
+                print("restored")
             case .deferred: // 許可を求める通知を発行した状態
-                break
+                print("deferred")
             @unknown default:
-                break
+                print("default")
             }
         }
     }
     
     // トランザクションがキューから削除されると呼び出されます。
     func paymentQueue(_ queue: SKPaymentQueue, removedTransactions transactions: [SKPaymentTransaction]) {
+        print("removedTransactions")
     }
     
     // リストア完了時に呼ばれる
     func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymentQueue) {
-        
+        print("paymentQueueRestoreCompletedTransactionsFinished")
     }
     
     // リストア失敗時に呼ばれる
     func paymentQueue(_ queue: SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: Error) {
-        
+        print("restoreCompletedTransactionsFailedWithError")
+    }
+    
+//    paymentQueueRestoreCompletedTransactionsFinished
+    func paymentQueue(_ queue: SKPaymentQueue, updatedDownloads downloads: [SKDownload]) {
+        print("updatedDownloads")
+    }
+    
+    func paymentQueue(_ queue: SKPaymentQueue, shouldAddStorePayment payment: SKPayment, for product: SKProduct) -> Bool {
+        print("shouldAddStorePayment")
+        return false
     }
 }
+
