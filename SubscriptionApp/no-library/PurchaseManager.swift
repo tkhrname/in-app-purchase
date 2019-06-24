@@ -108,6 +108,7 @@ class PurchaseManager: NSObject {
     }
     
     // MARK: - SKPaymentTransaction process
+    
     /// トランザクション処理完了
     ///
     /// - Parameters:
@@ -173,15 +174,10 @@ extension PurchaseManager : SKPaymentTransactionObserver {
             case .purchased: // 購入完了
                 print("purchased")
             case .failed: // 購入処理失敗
-                let error = transaction.error
-                print(error.debugDescription)
-                print(error?.localizedDescription)
-                let nserror = error as! NSError
-                print(nserror.code)
-                print(nserror.domain)
-                print(nserror.localizedDescription)
-                print(nserror.localizedFailureReason)
-                print(nserror.userInfo)
+                guard let error = transaction.error else { return }
+                print(error.nserror.code)
+                print(error.nserror.domain)
+                print(error.nserror.description)
             case .restored: // 以前にユーザーが購入したコンテンツを復元
                 print("restored")
             case .deferred: // 許可を求める通知を発行した状態

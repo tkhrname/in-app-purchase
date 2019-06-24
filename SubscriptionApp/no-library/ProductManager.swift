@@ -36,16 +36,18 @@ public enum ProductManagerError: Error, CustomStringConvertible {
 
 // 課金アイテム管理クラス
 final public class ProductManager: NSObject {
+    /// 完了通知(プロダクト複数用)
+    public typealias Completion = ([SKProduct], Error?) -> Void
+    /// 完了通知(プロダクト単数用)
+    public typealias CompletionForSingle = (SKProduct?, Error?) -> Void
+    
     /// 保持用
     static private var managers: Set<ProductManager> = Set()
-    /// 完了通知
-    public typealias Completion = ([SKProduct], Error?) -> Void
-    /// 完了通知
-    public typealias CompletionForSingle = (SKProduct?, Error?) -> Void
     /// 完了通知用
     private var completion: Completion
     /// 価格問い合わせ用オブジェクト(保持用)
     private var productRequest: SKProductsRequest?
+    
     /// 初期化
     private init(completion: @escaping Completion) {
         self.completion = completion

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SubscriptionApp/no-library/PurchaseManager.swift"
-            timestampString = "582797540.081988"
+            timestampString = "583053704.131577"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
             landmarkName = "paymentQueue(_:updatedTransactions:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SubscriptionApp/no-library/ViewController.swift"
-            timestampString = "582797540.082773"
+            filePath = "SubscriptionApp/no-library/ProductManager.swift"
+            timestampString = "583053704.1316741"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "requestDidFinish(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SubscriptionApp/no-library/PurchaseManager.swift"
-            timestampString = "582797540.083046"
+            filePath = "SubscriptionApp/no-library/ProductManager.swift"
+            timestampString = "583055935.708179"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
-            landmarkName = "paymentQueue(_:updatedTransactions:)"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "productsRequest(_:didReceive:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -20,6 +20,7 @@
 		6D099F0F22B0E0F500E66004 /* VipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D099F0E22B0E0F500E66004 /* VipViewController.swift */; };
 		6D099F1122B0E19A00E66004 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D099F1022B0E19A00E66004 /* ProfileViewController.swift */; };
 		6D099F1322B0E1D100E66004 /* InterAdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D099F1222B0E1D100E66004 /* InterAdsViewController.swift */; };
+		6D40369422C055C600BCBCCC /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D40369322C055C600BCBCCC /* CustomError.swift */; };
 		6D406AA022B9CCE40061A8DC /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D406A9F22B9CCE40061A8DC /* ProductManager.swift */; };
 		6D406AA322B9CCF60061A8DC /* PurchaseManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D406AA122B9CCF60061A8DC /* PurchaseManagerDelegate.swift */; };
 		6D406AA422B9CCF60061A8DC /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D406AA222B9CCF60061A8DC /* PurchaseManager.swift */; };
@@ -66,6 +67,7 @@
 		6D099F0E22B0E0F500E66004 /* VipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VipViewController.swift; sourceTree = "<group>"; };
 		6D099F1022B0E19A00E66004 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6D099F1222B0E1D100E66004 /* InterAdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterAdsViewController.swift; sourceTree = "<group>"; };
+		6D40369322C055C600BCBCCC /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		6D406A9F22B9CCE40061A8DC /* ProductManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
 		6D406AA122B9CCF60061A8DC /* PurchaseManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseManagerDelegate.swift; sourceTree = "<group>"; };
 		6D406AA222B9CCF60061A8DC /* PurchaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				6D099EE922B080DF00E66004 /* LaunchScreen.storyboard */,
 				6D099EEC22B080DF00E66004 /* Info.plist */,
 				6D099EE422B080DD00E66004 /* SubscriptionApp.xcdatamodeld */,
+				6D40369322C055C600BCBCCC /* CustomError.swift */,
 			);
 			path = SubscriptionApp;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				6D406AA022B9CCE40061A8DC /* ProductManager.swift in Sources */,
 				6D099EE022B080DD00E66004 /* SwiftyStoreKitViewController.swift in Sources */,
 				6D099F1322B0E1D100E66004 /* InterAdsViewController.swift in Sources */,
+				6D40369422C055C600BCBCCC /* CustomError.swift in Sources */,
 				6D099F1122B0E19A00E66004 /* ProfileViewController.swift in Sources */,
 				6D099EE622B080DD00E66004 /* SubscriptionApp.xcdatamodeld in Sources */,
 				6D099EDE22B080DD00E66004 /* AppDelegate.swift in Sources */,
