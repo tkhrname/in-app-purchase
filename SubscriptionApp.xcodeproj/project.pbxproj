@@ -21,6 +21,7 @@
 		6D099F1122B0E19A00E66004 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D099F1022B0E19A00E66004 /* ProfileViewController.swift */; };
 		6D099F1322B0E1D100E66004 /* InterAdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D099F1222B0E1D100E66004 /* InterAdsViewController.swift */; };
 		6D40369422C055C600BCBCCC /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D40369322C055C600BCBCCC /* CustomError.swift */; };
+		6D40369622C0C97700BCBCCC /* PurchaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D40369522C0C97700BCBCCC /* PurchaseViewModel.swift */; };
 		6D406AA022B9CCE40061A8DC /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D406A9F22B9CCE40061A8DC /* ProductManager.swift */; };
 		6D406AA322B9CCF60061A8DC /* PurchaseManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D406AA122B9CCF60061A8DC /* PurchaseManagerDelegate.swift */; };
 		6D406AA422B9CCF60061A8DC /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D406AA222B9CCF60061A8DC /* PurchaseManager.swift */; };
@@ -68,6 +69,7 @@
 		6D099F1022B0E19A00E66004 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6D099F1222B0E1D100E66004 /* InterAdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterAdsViewController.swift; sourceTree = "<group>"; };
 		6D40369322C055C600BCBCCC /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		6D40369522C0C97700BCBCCC /* PurchaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewModel.swift; sourceTree = "<group>"; };
 		6D406A9F22B9CCE40061A8DC /* ProductManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
 		6D406AA122B9CCF60061A8DC /* PurchaseManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseManagerDelegate.swift; sourceTree = "<group>"; };
 		6D406AA222B9CCF60061A8DC /* PurchaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				6D406AA122B9CCF60061A8DC /* PurchaseManagerDelegate.swift */,
 				6D406A9F22B9CCE40061A8DC /* ProductManager.swift */,
 				6D738DA222B9D9E700BFF101 /* ViewController.swift */,
+				6D40369522C0C97700BCBCCC /* PurchaseViewModel.swift */,
 			);
 			path = "no-library";
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D738DA322B9D9E700BFF101 /* ViewController.swift in Sources */,
+				6D40369622C0C97700BCBCCC /* PurchaseViewModel.swift in Sources */,
 				6D099F0F22B0E0F500E66004 /* VipViewController.swift in Sources */,
 				6D406AA422B9CCF60061A8DC /* PurchaseManager.swift in Sources */,
 				6D406AA322B9CCF60061A8DC /* PurchaseManagerDelegate.swift in Sources */,
